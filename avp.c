@@ -18,7 +18,7 @@
 #include <netinet/in.h>
 #include "l2tp.h"
 
-#define AVP_MAX 39
+#define AVP_MAX 80
 
 struct avp avps[] = {
 
@@ -61,7 +61,47 @@ struct avp avps[] = {
     {36, 1, &rand_vector_avp, "Random Vector"},
     {37, 1, NULL, "Private Group ID"},
     {38, 0, &rx_speed_avp, "Receive Connect Speed"},
-    {39, 1, &seq_reqd_avp, "Sequencing Required"}
+    {39, 1, &seq_reqd_avp, "Sequencing Required"},
+    {40, 0, NULL, ""},
+    {41, 0, NULL, ""},
+    {42, 0, NULL, ""},
+    {43, 0, NULL, ""},
+    {44, 0, NULL, ""},
+    {45, 0, NULL, ""},
+    {46, 0, NULL, ""},
+    {47, 0, NULL, ""},
+    {48, 0, NULL, ""},
+    {49, 0, NULL, ""},
+    {50, 0, NULL, ""},
+    {51, 0, NULL, ""},
+    {52, 0, NULL, ""},
+    {53, 0, NULL, ""},
+    {54, 0, NULL, ""},
+    {55, 0, NULL, ""},
+    {56, 0, NULL, ""},
+    {57, 0, NULL, ""},
+    {58, 0, NULL, ""},
+    {59, 0, NULL, ""},
+    {60, 0, NULL, ""},
+    {61, 0, NULL, ""},
+    {62, 0, NULL, ""},
+    {63, 0, NULL, ""},
+    {64, 0, NULL, ""},
+    {65, 0, NULL, ""},
+    {66, 0, NULL, ""},
+    {67, 0, NULL, ""},
+    {68, 0, NULL, ""},
+    {69, 0, NULL, ""},
+    {70, 0, NULL, ""},
+    {71, 0, NULL, ""},
+    {72, 0, NULL, ""},
+    {73, 0, NULL, ""},
+    {74, 0, NULL, ""},
+    {75, 0, NULL, ""},
+    {76, 0, NULL, ""},
+    {77, 0, NULL, ""},
+    {78, 0, NULL, ""},
+    {79, 0, NULL, ""},
 };
 
 char *msgtypes[] = {
